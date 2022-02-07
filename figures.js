@@ -45,15 +45,17 @@ function circleArea(radius){
 }
 console.groupEnd();
 
+/* ----------------------------------------------- */
 
-// Aquí vamos a interactuar con el HTML
+// The following functions are called when the user hit any of the buttons
+
 function getSquarePerimeter(){
     const input = document.getElementById("squareSide");
-    const value = Number(input.value);
+    const value = Number(input.value); // We get the value of the input
 
     const perimeter = squarePerimeter(value);
-    const squareResult = document.getElementById("squareResult");
-    squareResult.innerText = "The square perimeter is: " + perimeter + ".";
+    const squareResult = document.getElementById("squareResult"); 
+    squareResult.innerText = "The square perimeter is: " + perimeter + "."; // Write the result in the HTML
 }
 
 function getSquareArea(){

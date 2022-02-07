@@ -1,11 +1,6 @@
 function getArithmeticMean(list){
-    // let listSum = 0;
 
-    // for (let i = 0; i < list.length; i++){
-    //     listSum += list[i];
-    // }
-
-    const listSum = list.reduce(
+    const listSum = list.reduce(        // We the the sum of all values
         function(accumValue = 0, newElement){
             return accumValue + newElement;
         }
@@ -18,41 +13,41 @@ function getArithmeticMean(list){
 
 function getMode(list){
     const countList = {};
-    list.map(function(element){
+    list.map(function(element){ // We count how many times each number in the list appears
         if(countList[element])
             return countList[element] += 1;
         else
             return countList[element] = 1;
     });
-    listMode = Object.entries(countList).sort(function (a,b){
-        return a[1]-b[1];
+    listMode = Object.entries(countList).sort(function (a,b){ 
+        return a[1]-b[1];   // We sort the numbers the repetition of each number. From lowest to highest
     });
-    console.log(listMode);
-    return listMode[listMode.length - 1];
+    return listMode[listMode.length - 1]; // We return the last number, since it's the one which repeats most times. 
 }
 
 function getMedian(list){
-    const sortedList = list.sort((a,b) => a-b);
+    const sortedList = list.sort((a,b) => a-b); // We sort the numbers from lowest to highes
     const lenList = sortedList.length;
-    if(lenList % 2 === 0){
+    if(lenList % 2 === 0){  // If dataset has an even numer of elements, we get the arithmetic mean of the two middle numbers
         return (sortedList[parseInt(lenList/2)] + sortedList[parseInt(lenList/2)- 1]) / 2;
     }
-    else{
+    else{ // else we return the middle number
         return sortedList[parseInt(lenList/2)];
     }
 }
 
 /* ------------------------------------------------------*/
 
+// Following code is executed when user hits the button
 function getAnalysis(){
     const listValue = document.getElementById("inputData");
     if(listValue.value.replace(/\s+/g,"")==""){
-        alert("Enter valid values");
+        alert("Enter valid values"); // If user hits the button when input is empty.
     }
-    else{
+    else{ // We use commas to split the numbers in an array made of strings
         list = listValue.value.split(",").map(
             function(elementInList){
-                return Number(elementInList);
+                return Number(elementInList); // we convert the strings into numbers
         });
 
         const arithmeticMean = getArithmeticMean(list);
