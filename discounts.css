@@ -1,0 +1,201 @@
+.mainContainer figure{
+    background-color: white;
+    width: 300px;
+    border-radius: 40px;
+    position: relative;
+    margin: auto;
+    -webkit-box-shadow: 10px 10px 31px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 31px -9px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 31px -9px rgba(0,0,0,0.75);
+    margin-bottom: 32px;
+}
+
+.mainContainer figure img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.mainContainer .nameProduct{
+    background: linear-gradient(24deg, rgba(29,29,29,1) 0%, rgba(65,65,73,1) 100%); 
+    width: 200px;
+    padding: 8px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;  
+}
+
+.circleDiscount{
+    display: flex;
+    width: 72px;
+    height: 72px;
+    background: rgb(233,69,117);
+    justify-content: center;
+    padding: 40px;
+    border-radius: 50%;
+    align-items: center;
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    -webkit-box-shadow: 10px 10px 31px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 31px -9px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 31px -9px rgba(0,0,0,0.75);
+}
+
+.mainContainer figure span{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.productContainer span:nth-child(4){
+    color: gray;
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.productContainer{
+    width: 95%;
+    margin: auto; 
+}
+
+.promoCodeContainer{
+    background: linear-gradient(24deg, rgba(29,29,29,1) 0%, rgba(65,65,73,1) 100%); 
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.8rem;
+    color: white;
+    padding: 20px; 
+    align-items: center;
+    position: sticky;
+    border-radius: 4px;
+    margin-bottom: 32px;
+}
+
+.discountForm{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 12px 4px 12px 4px;
+    background-color: white;
+    color: gray;
+    border-radius: 12px;
+    border: 2px solid;
+    margin-bottom: 32px;
+}
+
+.discountForm input{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1.6rem;
+    border: solid;
+    border-width: 1px;
+    border-color: #D1D5D9;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.discountForm button{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1.6rem;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(24deg, rgba(29,29,29,1) 0%, rgba(65,65,73,1) 100%);
+    color: white;
+}
+
+.discountForm button:hover{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1.6rem;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(0deg, rgba(228,66,102,1) 0%, rgba(233,69,117,1) 100%);
+    color: white;
+    -webkit-box-shadow: 10px 10px 38px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 38px -9px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 38px -9px rgba(0,0,0,0.75);
+}
+
+.discountForm p{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer{
+    background: linear-gradient(24deg, rgba(29,29,29,1) 0%, rgba(65,65,73,1) 100%);
+    color: white;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.socialMediaContainer{
+    width: 30%;
+}
+
+.myMediaList{
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+a{
+    color: white;
+}
+
+.myMediaList a:hover{
+    color: rgb(233,69,117);
+}
+
+.aboutMeContainer{
+    width: 50%;
+}
+
+.aboutMeContainer a:hover{
+    color: rgb(233,69,117);
+}
+
+@media (min-width: 600px){
+    .productContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .productCard{
+        width: 50%;
+    }
+
+    .promoCodeContainer{
+        width: 50%;
+    }
+
+    .infoContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 12px;
+    }
+
+    .promoCodeContainer{
+        width: 100%;
+    }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometric figures | HTML, CSS and JavaScript project</title>
+    <link rel="stylesheet" href="./figures.css">
+    <link rel="stylesheet" href="./common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav class="mainMenu">
+            <div class="menuVisible">
+                <a class="myLogo" href="./index.html" class="active">Logo</a>
+                <a class="myIconMenu" href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <div id="menuNotVisible">
+                <ul class="myLinks">
+                    <li><a class="menuItem" href="#"><i class="fa fa-fw fa-square"></i> Geometric Figures</a></li>
+                    <li><a class="menuItem" href="./discounts.html"><i class="fa fa-fw fa-percent"></i> Percentages and discount</a></li>
+                    <li><a class="menuItem" href="./statistics.html"><i class="fa fa-fw fa-bar-chart"></i> Statistics</a></li>
+                    <li><a class="menuItem" href=""><i class="fa fa-fw fa-money"></i> This page lives in the future</a></li>
+                </ul>
+            </div>
+        </nav>
+        <span>This is the first module of the JavaScript practical course. Made with love, by Mike Hernández 🖤🖤🖤</span>
+    </header>
+    
+    <main class="mainContainer">
+        <h1><span class="h1ColorRed">Geometric </span>Figures</h1>
+        <section class="geometryCalculatorContainer">
+            <div class="squareCalculator">
+                <figure>
+                    <img src="./assets/icons/medium_icons/square.png" alt="">
+                </figure>
+                <h2>Square</h2>
+                <form class="squareForm"action="">
+                    <label for="squareSide">How long is each side of your square?</label>
+                    <input id="squareSide" type="number">
+                    <div>
+                        <button type="button" onclick="getSquarePerimeter()">Get perimeter</button>
+                        <button type="button" onclick="getSquareArea()">Get area</button>
+                    </div>
+                </form>
+                <p id="squareResult"></p>
+            </div>
+
+            <div class="triangleCalculator">
+                <figure>
+                    <img src="./assets/icons/medium_icons/triangle.png" alt="">
+                </figure>
+                <h2>Triangle</h2>
+                <form class="triangleForm" action="">
+                    <span>What are the measurements of your triangle?</span>
+                    <label for="triangleSide1">Side 1:</label>
+                    <input id="triangleSide1" type="number">
+                    <label for="triangleSide2">Side 2:</label>
+                    <input id="triangleSide2" type="number">
+                    <label for="triangleBase">Base:</label>
+                    <input id="triangleBase" type="number">
+                    <label for="triangleHeight">Height:</label>
+                    <input id="triangleHeight" type="number">
+                    <div>
+                        <button type="button" onclick="getTrianglePerimeter()">Get Perimeter</button>
+                        <button type="button" onclick="getTriangleArea()">Get Area</button>
+                    </div>
+                </form>
+                <p id="triangleResult"></p>
+            </div>
+
+            <div class="circleCalculator">
+                <figure>
+                    <img src="./assets/icons/medium_icons/circle.png" alt="">
+                </figure>
+                <h2>Circle</h2>
+                <form class="circleForm" action="">
+                    <label for="circleRadius">What is the radius of your circle?</label>
+                    <input id="circleRadius" type="number">
+                    <div>
+                        <button type="button" onclick="getCirclePerimeter()">Get Perimeter</button>
+                        <button type="button" onclick="getCircleArea()">Get area</button>
+                    </div>
+                </form>
+                <p id="circleResult"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="socialMediaContainer">
+            <span>More about me:</span>
+            <ul class="myMediaList">
+                <li><a href="https://twitter.com/miguelhmx"><span class="fa fa-fw fa-twitter-square"></span></a></li>
+                <li><a href="https://github.com/miguelhernandezk"><span class="fa fa-fw fa-github"></span></a></li>
+                <li><a href="https://www.linkedin.com/in/miguelhmx/"><span class="fa fa-fw fa-linkedin-square"></span></a></li>
+                <li><a href="https://www.youtube.com/channel/UCzEwvpryHbOlX_xRScyLjIg"><span class="fa fa-fw fa-youtube-play"></span></a></li>
+                <li><a href="https://www.facebook.com/miguelhmx"><span class="fa fa-fw fa-facebook-square"></span></a></li>
+            </ul>
+        </div>
+        <div class="aboutMeContainer">
+            <span>Made with HTML, CSS and JavaScript. Icons from <a href="https://fontawesome.com/v4.7/icons/">Font awesome</a>. Visit my site: <a href="https://www.miguelhernandezmx.com">Miguel Hernández <span class="fa fa-fw fa-external-link-square"></span></a></span>
+            <ul class=Donate>
+                
+            </ul>
+        </div>
+    </footer>
+    <script src="./figures.js"></script>
+    <script src="./common.js"></script>
+</body>
+</html>

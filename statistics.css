@@ -1,0 +1,133 @@
+.statisticsCalculator{
+    width: 95%;
+    background-color: white;   
+    margin: auto;
+    border-radius: 12px;
+    padding: 16px;
+    color: gray;
+}
+
+.statisticsCalculator form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 12px 4px 12px 4px;
+    border-radius: 12px;
+}
+
+.statisticsCalculator form input{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1.6rem;
+    border: solid;
+    border-width: 1px;
+    border-color: #D1D5D9;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.statisticsCalculator form button{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1.6rem;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(24deg, rgba(29,29,29,1) 0%, rgba(65,65,73,1) 100%);
+    color: white;
+}
+
+.statisticsCalculator form button:hover{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1.6rem;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(0deg, rgba(228,66,102,1) 0%, rgba(233,69,117,1) 100%);
+    color: white;
+    -webkit-box-shadow: 10px 10px 38px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 38px -9px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 38px -9px rgba(0,0,0,0.75);
+}
+
+.textSection{
+    border: 2px gray solid;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.statisticsCalculator p{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+footer{
+    background: linear-gradient(24deg, rgba(29,29,29,1) 0%, rgba(65,65,73,1) 100%);
+    color: white;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.socialMediaContainer{
+    width: 30%;
+}
+
+.myMediaList{
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+a{
+    color: white;
+}
+
+.myMediaList a:hover{
+    color: rgb(233,69,117);
+}
+
+.aboutMeContainer{
+    width: 50%;
+}
+
+.aboutMeContainer a:hover{
+    color: rgb(233,69,117);
+}
+
+@media (min-width: 600px){
+    .mainMenu{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .myLogo{
+        width: 20%;
+    }
+    .menuVisible .myIconMenu{
+        display: none;
+    }
+    
+    ul{
+        display: flex;
+        list-style-type: none;
+    }
+
+    .myLinks{
+        border-top: none;
+    }
+
+    .myLinks li a:hover{
+        border-radius: 5px;
+    }
+
+    header > span{
+        text-align: center;
+    }
+
+}

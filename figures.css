@@ -1,0 +1,106 @@
+.geometryCalculatorContainer{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.squareCalculator, .triangleCalculator, .circleCalculator{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 5px auto;
+    padding: 20px;
+    border-radius: 20px;
+    background: white;
+    color: black;
+    margin-bottom: 52px;
+    position: relative;
+}
+
+.triangleCalculator figure, .circleCalculator figure, .squareCalculator figure{
+    background: linear-gradient(0deg, rgba(228,66,102,1) 0%, rgba(233,69,117,1) 100%);
+    border-radius: 20px;
+    height: 80px;
+    width: 80px;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,.14),0 7px 10px -5px rgba(64,64,64,.4)!important;
+    position: absolute;
+    top: -40px;
+    left: 5%;
+}
+
+.squareCalculator figure img, .triangleCalculator figure img, .circleCalculator figure img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 25%;
+    right: 25%;
+}
+
+.squareCalculator h2, .triangleCalculator h2, .circleCalculator h2{
+    margin-top: 40px;;
+}
+
+.squareForm div, .triangleForm div, .circleForm div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.squareCalculator form, .triangleCalculator form, .circleCalculator form{
+    display: flex;
+    flex-direction: column;
+    color: gray;
+}
+
+.squareForm input, .triangleForm input, .circleForm input{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1.6rem;
+    border: solid;
+    border-width: 1px;
+    border-color: #D1D5D9;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.squareForm button, .triangleForm button, .circleForm button{
+    width: 49%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1.6rem;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(24deg, rgba(29,29,29,1) 0%, rgba(65,65,73,1) 100%);
+    color: white;
+}
+
+.squareForm button:hover, .triangleForm button:hover, .circleForm button:hover{
+    width: 49%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1.6rem;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(0deg, rgba(228,66,102,1) 0%, rgba(233,69,117,1) 100%);
+    color: white;
+    -webkit-box-shadow: 10px 10px 38px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 38px -9px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 38px -9px rgba(0,0,0,0.75);
+
+}
+
+@media (min-width: 600px){
+    .geometryCalculatorContainer{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .squareCalculator, .triangleCalculator, .circleCalculator{
+        width: 32%;
+        height: auto;
+    }
+}

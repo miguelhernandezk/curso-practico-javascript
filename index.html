@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage and discounts | HTML, CSS and JavaScript project</title>
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="mainMenu">
+            <div class="menuVisible">
+                <a class="myLogo" href="#" class="active">Logo</a>
+                <a class="myIconMenu" href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <div id="menuNotVisible">
+                <ul class="myLinks">
+                    <li><a class="menuItem" href="./figures.html"><i class="fa fa-fw fa-square"></i> Geometric Figures</a></li>
+                    <li><a class="menuItem" href="./discounts.html"><i class="fa fa-fw fa-percent"></i> Percentages and discount</a></li>
+                    <li><a class="menuItem" href="#"><i class="fa fa-fw fa-bar-chart"></i> Statistics</a></li>
+                    <li><a class="menuItem" href=""><i class="fa fa-fw fa-money"></i> This page lives in the future</a></li>
+                </ul>
+            </div>
+        </nav>
+        <span>This is the index page. You can find here a brief summary of each module. By Mike Hernández 🖤❤️🖤</span>
+    </header>
+
+
+    <main class="mainContainer">
+        <section class="overallContainer">
+            <p>
+                Through this modules you'll see different applications of HTML, CSS and JavaScript. This page is
+                intended to show the different skills used and its implementation through a scalable real world projects.
+                <br>
+                <br>
+                Though really basic stuff, this is my very first project in my portfolio. Modifications will be made through time.
+                You are currently viewing version 1.0.0
+                <br>
+                <br>
+                Overall charactetistics/skills used:
+                <br><br>
+            </p>
+            <ul>
+                <li><i class="fa fa-check" aria-hidden="true"></i> JavaScript integration into a HTML website.</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i> CSS Styling and layout</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i> Integration of external css Stylesheets (Font-awesome)</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i> Basic DOM modification</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i> Intermetdiate use of Flex property</li>
+            </ul>
+        </section>
+        <div class="cardsContainer">
+            <section class="geometryContainer">
+                <h2><span class="h1ColorRed">Geometric </span>Figures</h2>
+                <figure>
+                    <img src="./assets/geometric-figures.png" alt="">
+                    <div class="content">
+                        <p>In this module you can calculate the area and the perimeter of a square, a triangle and a circle. 
+                        </p>
+                        <span>Main points:</span>
+                        <ul>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> HTML and CSS styling: forms, buttons and images</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Responsive Design</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Basic use of functions in Javascript</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Modification of "p" element usng JavaScript</li>
+                        </ul>
+                    </div>
+                </figure>
+                <a href="./figures.html">GO NOW</a>
+            </section>
+
+            <section class="discountsContainer">
+                <h2><span class="h1ColorRed">Percentages </span>and Discounts</h2>
+                <figure>
+                    <img src="./assets/discounts.png" alt="">
+                    <div class="content">
+                        <p> In this module you can use a PromoCode in order to get a discount. PromoCode is validated locally
+                            and can be used only once. User is told the final price. 
+                        </p>
+                        <span>Main points:</span>
+                        <ul>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> HTML and CSS styling: forms, buttons and images</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Responsive design</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Use of arrays and switch-case statement</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Basic validation of user input data.</li>
+                        </ul>
+                    </div>
+                </figure>
+                <a href="./discounts.html">GO NOW</a>
+            </section>
+
+            <section class="statisticsContainer">
+                <h2>Statistics</h2>
+                <figure>
+                    <img src="./assets/statistics.png" alt="">
+                    <div class="content">
+                        <p> In this module you can enter a set of data, separated by a comma. You'll be given 
+                            the average, median and mode of your dataset.
+                        </p>
+                        <span></span>
+                        <ul>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> HTML and CSS styling: forms and buttons</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Intermediate Javascript: use of "map" and "reduce" methods/functions</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Use of sort function in JavaScript</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Basic validation of user input data</li>
+                        </ul>
+                    </div>
+                </figure>
+                <a href="./statistics.html">GO NOW</a>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="socialMediaContainer">
+            <span>More about me:</span>
+            <ul class="myMediaList">
+                <li><a href="https://twitter.com/miguelhmx"><span class="fa fa-fw fa-twitter-square"></span></a></li>
+                <li><a href="https://github.com/miguelhernandezk"><span class="fa fa-fw fa-github"></span></a></li>
+                <li><a href="https://www.linkedin.com/in/miguelhmx/"><span class="fa fa-fw fa-linkedin-square"></span></a></li>
+                <li><a href="https://www.youtube.com/channel/UCzEwvpryHbOlX_xRScyLjIg"><span class="fa fa-fw fa-youtube-play"></span></a></li>
+                <li><a href="https://www.facebook.com/miguelhmx"><span class="fa fa-fw fa-facebook-square"></span></a></li>
+            </ul>
+        </div>
+        <div class="aboutMeContainer">
+            <span>Made with HTML, CSS and JavaScript. Icons from <a href="https://fontawesome.com/v4.7/icons/">Font awesome</a>. Visit my site: <a href="https://www.miguelhernandezmx.com">Miguel Hernández <span class="fa fa-fw fa-external-link-square"></span></a></span>
+            <ul class=Donate>
+            </ul>
+        </div>
+    </footer>
+    <script src="./statistics.js"></script>
+    <script src="./common.js"></script>
+</body>
+</html>

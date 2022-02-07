@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.6rem;
+    background-color: #F2F5FB;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top:0;
+    z-index: 2;
+    background-color: #F2F5FB;
+}
+
+.mainMenu{
+    overflow: hidden;
+    background: linear-gradient(24deg, rgba(29,29,29,1) 0%, rgba(65,65,73,1) 100%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 2.5rem;
+}
+
+.mainMenu a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.menuVisible{
+    display: flex;
+}
+
+.myLogo{
+    width: 85%;
+}
+
+.myIconMenu{
+    width: 15%;
+    text-align: center;
+}
+
+.myIconMenu:hover{
+    background: linear-gradient(0deg, rgba(228,66,102,1) 0%, rgba(233,69,117,1) 100%);
+}
+
+#menuNotVisible{
+    display: none;
+}
+
+.myLinks{
+    font-size: 1.6rem;
+    border-top: solid rgba(255, 255, 255, 0.644);
+    border-width: 1px;
+}
+
+.myLinks li a:hover{
+    border-radius: 20px;
+    background: linear-gradient(0deg, rgba(228,66,102,1) 0%, rgba(233,69,117,1) 100%);
+}
+
+
+header > span{
+    width: 95%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-bottom: solid;
+    border-color: rgb(233,69,117);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.mainContainer h1{
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    display: inline-block;
+    padding: 20px;
+}
+
+.mainContainer .h1ColorRed{
+    color: rgb(233,69,117);
+}
+
+footer{
+    background: linear-gradient(24deg, rgba(29,29,29,1) 0%, rgba(65,65,73,1) 100%);
+    color: white;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.socialMediaContainer{
+    width: 30%;
+}
+
+.myMediaList{
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+a{
+    color: white;
+}
+
+.myMediaList a:hover{
+    color: rgb(233,69,117);
+}
+
+.aboutMeContainer{
+    width: 50%;
+}
+
+.aboutMeContainer a:hover{
+    color: rgb(233,69,117);
+}
+
+@media (min-width: 600px){
+    .mainMenu{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .myLogo{
+        width: 20%;
+    }
+    .menuVisible .myIconMenu{
+        display: none;
+    }
+    
+    ul{
+        display: flex;
+        list-style-type: none;
+    }
+
+    .myLinks{
+        border-top: none;
+    }
+
+    .myLinks li a:hover{
+        border-radius: 5px;
+    }
+
+    header > span{
+        text-align: center;
+    }
+}

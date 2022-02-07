@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage and discounts | HTML, CSS and JavaScript project</title>
+    <link rel="stylesheet" href="./statistics.css">
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="mainMenu">
+            <div class="menuVisible">
+                <a class="myLogo" href="./index.html" class="active">Logo</a>
+                <a class="myIconMenu" href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <div id="menuNotVisible">
+                <ul class="myLinks">
+                    <li><a class="menuItem" href="./figures.html"><i class="fa fa-fw fa-square"></i> Geometric Figures</a></li>
+                    <li><a class="menuItem" href="./discounts.html"><i class="fa fa-fw fa-percent"></i> Percentages and discount</a></li>
+                    <li><a class="menuItem" href="#"><i class="fa fa-fw fa-bar-chart"></i> Statistics</a></li>
+                    <li><a class="menuItem" href=""><i class="fa fa-fw fa-money"></i> This page lives in the future</a></li>
+                </ul>
+            </div>
+        </nav>
+        <span>This is the third module of the JavaScript practical course. Made with love, by Mike Hernández 🖤🖤🖤</span>
+    </header>
+
+
+    <main class="mainContainer">
+        <h1><span class="h1ColorRed">Arithmetic mean, mode </span>and median</h1>
+        <section class="statisticsCalculator">
+            <form class="calculatorForm" action="">
+                <label for="inputData">Enter your data: </label>
+                <input id="inputData" type="text" placeholder="Ex: 45, 24, 235, 654...">
+
+                <button type="button" onclick="getAnalysis()">Get analysis</button>
+            </form>
+            <div class="textSection">
+                <p id="result1Text">Your result will be shown here</p>
+                <p id="result2Text"></p>
+                <p id="result3Text"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="socialMediaContainer">
+            <span>More about me:</span>
+            <ul class="myMediaList">
+                <li><a href="https://twitter.com/miguelhmx"><span class="fa fa-fw fa-twitter-square"></span></a></li>
+                <li><a href="https://github.com/miguelhernandezk"><span class="fa fa-fw fa-github"></span></a></li>
+                <li><a href="https://www.linkedin.com/in/miguelhmx/"><span class="fa fa-fw fa-linkedin-square"></span></a></li>
+                <li><a href="https://www.youtube.com/channel/UCzEwvpryHbOlX_xRScyLjIg"><span class="fa fa-fw fa-youtube-play"></span></a></li>
+                <li><a href="https://www.facebook.com/miguelhmx"><span class="fa fa-fw fa-facebook-square"></span></a></li>
+            </ul>
+        </div>
+        <div class="aboutMeContainer">
+            <span>Made with HTML, CSS and JavaScript. Icons from <a href="https://fontawesome.com/v4.7/icons/">Font awesome</a>. Visit my site: <a href="https://www.miguelhernandezmx.com">Miguel Hernández <span class="fa fa-fw fa-external-link-square"></span></a></span>
+            <ul class=Donate>
+            </ul>
+        </div>
+    </footer>
+    <script src="./statistics.js"></script>
+    <script src="./common.js"></script>
+</body>
+</html>

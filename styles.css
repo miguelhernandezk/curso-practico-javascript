@@ -1,0 +1,106 @@
+.mainContainer{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.cardsContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.geometryContainer, .discountsContainer, .statisticsContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.geometryContainer h2, .discountsContainer h2, .statisticsContainer h2{
+    text-align: center; 
+}
+figure{
+    margin: 0 auto; 
+    overflow: hidden;
+    position: relative;
+}
+
+figure img{
+    width: 100%;
+    height: 400px;
+    border-radius: 20px;
+    object-fit: cover;
+    border: 3px solid rgba(65,65,73,1);
+}
+
+.content{
+    position: absolute;
+    top: 0;
+    border-radius: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    height: 400px;
+    transition: .7s ease;
+    opacity:0;
+    color: white;
+    font-size: 1.6rem;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.geometryContainer figure:hover .content, .discountsContainer figure:hover .content, .statisticsContainer figure:hover .content{
+    opacity: 1;
+}
+
+.content p, .content span{
+    margin-bottom: 20px;
+}
+.content ul{
+    flex-direction: column;
+    list-style: none;
+}
+.content ul li{
+    margin-bottom: 8px;
+}
+
+.mainContainer a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mainContainer a:hover{
+    color: rgb(233,69,117);
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (min-width: 600px){
+    .mainContainer ul{
+        flex-direction: column;
+        list-style: none;
+    }
+    .mainContainer ul li{
+        margin-bottom: 8px;
+    }
+    .cardsContainer{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .geometryContainer, .discountsContainer, .statisticsContainer{
+        width: 380px;
+        margin: 20px 20px;
+    }
+}
